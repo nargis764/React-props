@@ -1,0 +1,41 @@
+Card.jsx
+
+import React from "react";
+import Avatar from "./Avatar";
+import Detail from "./Detail";
+
+function Card(props) {
+  return (
+  <div className="card">
+  <div className="top">
+    <h2 className="name">{props.name}</h2>
+    <Avatar img={props.img}/>
+  </div>
+  <div className="bottom">
+    <Detail detailInfo={props.phone} />
+    <Detail detailInfo={props.email} />
+  </div>
+</div>
+);
+}
+
+Avatar.jsx
+import React from "react";
+
+function Avatar(props) {
+  return <img className="circle-img" src={props.img} alt="avatar_img" />;
+}
+
+export default Avatar;
+
+Detail.jsx
+import React from "react";
+
+function Detail(props) {
+  return <p className="info">{props.detailInfo}</p>    
+      
+}
+
+export default Detail;
+
+export default Card;

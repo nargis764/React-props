@@ -1,0 +1,122 @@
+index.js
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="../src/index.js" type="text/jsx"></script>
+  </body>
+</html>
+
+
+styles.css
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 400px;
+  min-width: 400px;
+  background-color: #dfe6e9;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2em;
+  color: #2d3436;
+  margin: 20px 0 30px;
+}
+
+.card {
+  border-radius: 25px;
+  position: relative;
+  padding: 25px 15px;
+  background-color: #81ecec;
+  margin: 50px 0;
+  height: 200px;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: left;
+}
+
+.top {
+  border-radius: 25px 25px 0 0;
+  height: 100px;
+  width: 100%;
+  background-color: #00cec9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.name {
+  font-size: 2em;
+  color: #2d3436;
+  display: flex;
+  flex: 1;
+  margin: 10% 20px 0;
+}
+
+.card img {
+  margin: 30px 20px 0 0;
+}
+
+.circle-img {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 120px;
+  height: 120px;
+}
+
+.bottom {
+  margin-top: 120px;
+}
+
+.info {
+  margin: 20px 0;
+  color: #1a7e76;
+}
+
+
+
+contatcs.js
+
+const contacts = [
+  {
+    name: "Mickey Mouse",
+    imgURL:
+      "https://awesometalks.files.wordpress.com/2008/12/200px-mickey_mouse_svg.png",
+    phone: "+123 456 789",
+    email: "mm@clubhouse.com"
+  },
+  {
+    name: "Garfield",
+    imgURL:
+      "https://store-images.s-microsoft.com/image/apps.64343.13510798883016302.711f64c5-ea53-4b9e-ad27-1186ffc17a97.f555885a-d771-4a1b-9ed5-a5a49225c510?mode=scale&q=90&h=200&w=200",
+    phone: "+234 567 890",
+    email: "g@field.com"
+  },
+  {
+    name: "Hello Kitty",
+    imgURL:
+      "https://listimg.pinclipart.com/picdir/s/527-5273360_hello-kitty-hello-kitty-wearing-dress-clipart.png",
+    phone: "+546 345 237",
+    email: "hello@kitty.com"
+  }
+];
+
+export default contacts;
